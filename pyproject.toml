@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61", "setuptools.scm"]
-build-backend = "setuptools.build_meta"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
 [project]
 # name it as your package name
@@ -13,7 +13,7 @@ authors = [{name = "QuantTide Inc.", email = "opensource@quanttide.com"}]
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
-requires-python = '>=3'
+requires-python = '>=3.8'
 dependencies = [
 ]
 # dynamic = ["version"]
@@ -25,3 +25,8 @@ file = "LICENSE"
 [project.readme]
 file = "README.md"
 content-type = "text/markdown"
+
+[tool.pdm.build]
+includes = [
+    "python_package",
+]
