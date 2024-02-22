@@ -95,6 +95,7 @@ ipython_config.py
 #Pipfile.lock
 
 # PDM
+.pdm.toml
 .pdm-python
 .pdm-build/
 
