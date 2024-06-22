@@ -23,6 +23,9 @@ dependencies = [
 file = "README.md"
 content-type = "text/markdown"
 
+# 如需跨一级目录（一级目录即项目根目录的下一级）`import` 代码，
+# 将此处的 distribution 改为 true
+# 重新执行 pdm install 后即可从任意一级目录开始 import
 [tool.pdm]
 distribution = false
 
